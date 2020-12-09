@@ -526,7 +526,7 @@ header {
 }
 
 .main-img {
-  padding: 0 50px;
+  padding: 0;
 }
 
 .main-img-wrapper {
@@ -875,7 +875,7 @@ body .cursor {
     padding-bottom: 80px;
   }
   .sl-news .slick-track {
-    margin: 0 -15px;
+    margin: 0;
   }
   .sl-news .slick-slide {
     padding: 0 15px;
