@@ -17,6 +17,14 @@ $(document).ready(function () {
         $('body').removeClass('scroll-locked');
     });
 
+
+    var wow = new WOW({
+        animateClass: 'animated',
+        offset: 200
+    });
+    wow.init();
+
+
     // Variables
     const $cursor = $('.cursor');
 
