@@ -1231,6 +1231,124 @@ footer .title {
   margin-left: 20px;
 }
 
+.modal-plain {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 65%;
+  padding: 20px 5px 0 70px;
+  -webkit-transform: translateX(110%);
+      -ms-transform: translateX(110%);
+          transform: translateX(110%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-plain-head {
+  position: relative;
+  width: 100%;
+  min-height: 40px;
+}
+
+.modal-plain-head .close-modal {
+  position: absolute;
+  left: -100px;
+}
+
+.modal-plain-body {
+  height: 90%;
+  overflow-y: auto;
+  padding-right: 90px;
+}
+
+.modal-plain-body h2 {
+  font-family: "SF Pro Text Ultralight";
+  font-size: 40px;
+  line-height: 115%;
+  color: #222222;
+  margin-bottom: 28px;
+}
+
+.modal-plain-body h3 {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 1.7px;
+  color: #C0C0C0;
+  margin-bottom: 38px;
+}
+
+.modal-plain-body img {
+  width: 100%;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.modal-plain-body p {
+  font-family: "SF Pro Text";
+  font-size: 17px;
+  line-height: 150%;
+  color: #222222;
+}
+
+.modal-plain-body p + p {
+  margin-top: 15px;
+}
+
+.modal-plain-body::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px #333333;
+  background-color: #555;
+}
+
+.modal-plain-body::-webkit-scrollbar {
+  width: 2px;
+  background-color: #F5F5F5;
+}
+
+.modal-show {
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.close-modal {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
 .light-theme {
   background: white;
 }
@@ -1706,6 +1824,40 @@ footer .title {
             transform: translateY(0);
     margin-bottom: 30px;
   }
+  .modal-plain {
+    width: 90%;
+    padding: 0px 5px 0 30px;
+  }
+  .modal-plain-head {
+    position: relative;
+    width: 100%;
+    min-height: 20px;
+  }
+  .modal-plain-head .close-modal {
+    top: 20px;
+    left: -56px;
+  }
+  .modal-plain-body {
+    padding-right: 20px;
+  }
+  .modal-plain-body h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+  .modal-plain-body h3 {
+    letter-spacing: 1.2px;
+    margin-bottom: 18px;
+  }
+  .modal-plain-body img {
+    margin-bottom: 20px;
+  }
+  .modal-plain-body p {
+    font-size: 14px;
+  }
+  .close-modal {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1821,6 +1973,38 @@ footer .title {
     width: 100%;
     margin: 30px 0;
   }
+  .modal-plain {
+    width: 70%;
+    padding: 20px 5px 0 30px;
+  }
+  .modal-plain-head {
+    position: relative;
+    width: 100%;
+  }
+  .modal-plain-head .close-modal {
+    left: -56px;
+  }
+  .modal-plain-body {
+    padding-right: 20px;
+  }
+  .modal-plain-body h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+  .modal-plain-body h3 {
+    letter-spacing: 1.2px;
+    margin-bottom: 18px;
+  }
+  .modal-plain-body img {
+    margin-bottom: 20px;
+  }
+  .modal-plain-body p {
+    font-size: 14px;
+  }
+  .close-modal {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -1833,5 +2017,8 @@ footer .title {
   }
   .infoItem {
     padding: 0 20px;
+  }
+  .modal-plain {
+    width: 70%;
   }
 }
