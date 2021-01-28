@@ -1349,6 +1349,34 @@ footer .title {
           flex-shrink: 0;
 }
 
+.info-index {
+  padding-top: 80px;
+}
+
+.info-index .title {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.info-index .img-lg {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  max-height: 475px;
+}
+
+.info-index .show-more {
+  margin-top: 30px;
+}
+
+.bg-light {
+  display: none;
+}
+
+.bg-dark {
+  display: block;
+}
+
 .light-theme {
   background: white;
 }
@@ -1594,6 +1622,14 @@ footer .title {
 
 .light-theme .info-title ul li, .light-theme .info-title ol li {
   color: black;
+}
+
+.light-theme .bg-dark {
+  display: none;
+}
+
+.light-theme .bg-light {
+  display: block;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

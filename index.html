@@ -94,7 +94,8 @@
     </section>
     <section class="main-img">
         <div class="main-img-wrapper">
-            <img src="img/main/bg.png" alt="bugin.holding" id="img_scroll">
+            <img src="img/main/bg-dark.jpg" alt="bugin.holding"  class="img_scroll bg-dark">
+            <img src="img/main/bg.png" alt="bugin.holding" class="img_scroll bg-light">
             <div class="react-parallax-content" style="position: relative;"></div>
         </div>
     </section>
@@ -323,6 +324,29 @@
                         <h3>Parassat Tanenov</h3>
                         <p>Deputy CEO</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info info-index">
+        <div class="container">
+            <div class="info-flex align-items-center">
+                <div class="infoItem align-items-start">
+                    <div class="info-title">
+                        <h2 class="title">Mission</h2>
+                        <h2>
+                            We operate the largest Edutech Ecosystem in Kazakhstan with the mission to improve
+                            people’s lives by developing innovative products and services that transform the way
+                            education.
+                        </h2>
+                        <p>
+                            We are driving customer engagement by crafting seamless customer experience
+                            leveraging state-of-the-art technology and proprietary big data analytics.
+                        </p>
+                    </div>
+                </div>
+                <div class="infoItem">
+                    <img src="img/main/tablet.png" alt="" class="img-lg animated slideInUp wow">
                 </div>
             </div>
         </div>
@@ -577,7 +601,7 @@
             var scale = (100 + scroll / 6) / 100;
             // console.log('scale/: ' + scale);
             if (scale > 1 && scale < 1.5) {
-                $("#img_scroll").css({
+                $(".img_scroll").css({
                     transform: 'translate3d(-50%, -' + (scroll / 100) + '%, 0) scale(' + (100 + scroll / 6) / 100 + ')',
                 });
             }
@@ -599,6 +623,5 @@
 
 
 </script>
-
 </body>
 </html>
